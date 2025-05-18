@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+#animatedImage {
+    width: 200px;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+    /* Smooth transition for non-animated states */
+}
+
+#animatedImage.rotate {
+    animation: rotate 2s linear infinite;
+    /* Rotate animation */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#preferences {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#preferences input {
+    margin-bottom: 10px; }
